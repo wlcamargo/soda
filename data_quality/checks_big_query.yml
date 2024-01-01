@@ -1,0 +1,11 @@
+# Checks for basic validations
+checks for tb_vendas:
+  - row_count > 0:
+      name: Verifica se a tabela não está vazia
+  - freshness(DataVenda) < 180d:
+      name: Checa se a data de atualização foi no dia anterior 
+  - schema:
+      name: Verifica se a coluna valor bruto é decimal
+      fail:
+        when wrong column type:
+          ValorBruto: numeric

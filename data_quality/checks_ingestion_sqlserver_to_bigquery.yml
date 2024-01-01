@@ -1,0 +1,20 @@
+reconciliation Production:
+  label: "Checks ingestions sqlserver to bigquery"
+  datasets:
+    source:
+      dataset: tb_live
+      datasource: conn_sql_server
+    target:
+      dataset: tb_live
+      datasource: conn_big_query
+
+  checks:
+    - row_count diff = 0:
+        name: check row count
+    - sum(id_cliente) diff = 0:
+        name: check sum id_cliente 
+    - min(id_cliente) diff = 0:
+        name: check min id_cliente
+    - max(id_cliente) diff = 0:
+        name: check max id_cliente
+    

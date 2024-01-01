@@ -1,0 +1,40 @@
+soda_cloud:
+  host: cloud.soda.io
+  api_key_id: 
+  api_key_secret: 
+
+data_source conn_sql_server:
+  type: sqlserver
+  host: localhost
+  port: '1433'
+  username: python
+  password: mudar@123
+  database: ESCOLA_ANALISE_DADOS
+  schema: dbo
+  trusted_connection: false
+  encrypt: false 
+  trust_server_certificate: false
+  driver: SQL Server Native Client 11.0
+
+data_source conn_big_query:
+  type: bigquery
+  account_info_json: '{
+  "type": "service_account",
+  "project_id": "",
+  "private_key_id": "",
+  "private_key": "",
+  "client_email": "",
+  "client_id": "",
+  "auth_uri": "",
+  "token_uri": "",
+  "auth_provider_x509_cert_url": "",
+  "client_x509_cert_url": "",
+  "universe_domain": ""
+}'
+  auth_scopes:
+  - https://www.googleapis.com/auth/bigquery
+  - https://www.googleapis.com/auth/cloud-platform
+  - https://www.googleapis.com/auth/drive
+  project_id: ""
+  dataset: bronze_dev
+

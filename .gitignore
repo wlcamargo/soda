@@ -1,0 +1,7 @@
+/.venv/*
+/__pycache__/
+/configs/conf_big_query.py
+*.pyc
+*.log
+/.vscode/*
+data_quality/configuration.yml

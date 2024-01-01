@@ -1,0 +1,6 @@
+IDTransacao;Cliente;NumeroDoCartao;DataDaTransacao;ValorDaTransacao;Estabelecimento
+6;Obi-Wan Kenobi;**** **** **** 2345;2023-03-15;120.75;LivrosJediEmStewjon
+7;Chewbacca;**** **** **** 6789;2023-04-01;80.20;LojaDeFerramentasEmKashyyyk
+8;Padme Amidala;**** **** **** 0123;2023-04-12;95.30;CafeteriaEmNaboo
+9;C-3PO;**** **** **** 4567;2023-05-03;30.50;ServicosDeTraducaoNaAliancaRebelde
+10;R2-D2;**** **** **** 8901;2023-05-18;45.75;OficinaDeReparosEmDroidsNaAliancaRebelde
